@@ -1,0 +1,17 @@
+<?xml version="1.0"?>	
+<skills> 
+	<hardskills>
+		<first>теория тестирования</first>
+		<second>знание SQL</second>
+		<third>Terminal</third>
+		<fourth>Postman</fourth>
+		<fifth>DevTools</fifth>
+	</hardskills>
+	<softskills>
+		<first>самодисциплина</first> 
+		<second>коммуникабельность</second>
+		<third>критическое мышление</third>
+		<fourth>стрессоустойчивость</fourth>
+	</softskills>
+</skills>
+

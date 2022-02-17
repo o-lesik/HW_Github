@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+    <Id>ABC</Id>
+    <title>Нажатие кнопки «Каталог»s на главной странице не перенаправляет на страницу Каталога</title>
+    <project>Сайт магазина игрушек «Бегемот»</project>
+    <STR>
+          <first>Зайти на главную страницу сайта (ссылка на cайт)</first>
+          <second>Нажать кнопку «Каталог»</second>
+    </STR>
+    <enviroment>
+           <OS>Windows 10 x64 build 19043</OS>
+           <browser>Google Chrome v96.0.4664.45 x64</browser>
+    </enviroment>
+    <component>Кнопка «Каталог»</component>
+    <build>0.5.7</build>
+    <actualresult>Нажатие кнопки «Каталог» НЕ перенаправляет на страницу Каталога</actualresult>
+    <expectedresult>Нажатие кнопки «Каталог» перенаправляет на страницу Каталога</expectedresult>
+    <severity>Critical</severity>
+    <priority>High</priority>
+    <status>Open</status>
+    <author>Олеся Манина</author>
+    <signto>Витя Петров</signto>
+    <attachments>ссылка на картинку с багом</attachments>
+</report>

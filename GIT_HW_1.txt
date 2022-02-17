@@ -1,0 +1,357 @@
+	Group 27
+	01 HW Git
+	Olesia Manina
+	Ссылка на GitHub: https://github.com/o-lesik?tab=repositories
+	Для выполнения задания я использую Terminal на MacOS и аккаунт в GitHub
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+Кнопка New в Github -> имя репозитория JSON -> галочки напротив Public и Add a README file
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+Скопировать URL из Github
+git clone https://github.com/o-lesik/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”.
+cd JSON
+touch new.json
+ 
+ 7. Добавить файл под гит.
+git add new.json
+
+ 8. Закоммитить файл.
+git commit -m "First file"
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json
+i и вводим:
+
+{	
+	"lastName": "Manina",
+	"firstName": "Olesia",
+	"patronymic": "Sergeevna",
+	"age": 25,
+	"pets": 0,
+	"desiredSalary": 1000 
+}
+
+Escape + :wq 
+
+ 11. Отправить изменения на внешний репозиторий.
+git commit -am "Change new.json"
+git push
+
+ 12. Создать файл preferences.json
+touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+vim preferences.json
+i и вводим:
+
+{ 	
+	"favoriteMovie": "Avatar",
+	"favoriteSeries: "Dexter",
+	"favoriteFood": "Sushi",
+	"favoriteSeason": "Summer",
+	"Country": "Egypt"
+
+}
+
+Escape + :wq
+
+ 14. Создать файл skills.json добавить информацию о скиллах, которые будут изучены на курсе в формате JSON
+touch skills.json
+vim skills.json
+i и вводим:
+
+{	
+	"skills": [ 
+		{"hard_skills": [ "теория_тестирования", "знание_ SQL", "Terminal", "Postman", "DevTools"]},
+		{"soft_skills": [ "самодисциплина", "коммуникабельность", "критическое_мышление", "стрессоустойчивость"]}
+ 		]
+}
+
+Escape + :wq
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+git add .
+git commit -m "Add 2 files"
+git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+Перейти в репозиторий JSON -> Add file -> Create new file bug_report.json
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Установить название коммита Create bug_report.json -> Commit new file
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+Выбрать в репозитории bug_report.json -> Edit this file -> вводим текст:
+
+{
+        "Id": "ABC",
+        "Title": "Нажатие_кнопки_'Каталог'_на_главной_странице_не_перенаправляет_на_страницу_Каталога",
+        "Project": "Сайт_магазина_игрушек_'Бегемот'",
+        "STR": [
+                "Зайти_на_главную_страницу_сайта_(ссылка_на_сайт)",
+                "Нажать_кнопку_'Каталог'"
+                ],
+        "Environment":
+                {
+                "OS": "Windows_10_x64_build_19043",
+                "Browser": "Google_Chrome_v96.0.4664.45_x64"
+                },
+        "Component": "Кнопка_'Каталог'",
+        "Build": "0.5.7",
+        "Actual_result": "Нажатие_кнопки_'Каталог'_НЕ_перенаправляет_на_страницу_Каталога",
+        "Expected_result": "Нажатие_кнопки_'Каталог'_перенаправляет_на_страницу_Каталога",
+        "Severity": "Critical",
+        "Priority": "High",
+        "Status": "Open",
+        "Author": "Олеся_Манина",
+        "Sign_to": "Витя_Петров",
+        "Attachments": "ссылка_на_картинку_с_багом"
+}
+ 
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Установить название коммита Edit bug_report.json -> Commit changes
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+git pull
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+Кнопка New в Github -> имя репозитория XML -> галочки напротив Public и Add a README file
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+git clone https://github.com/o-lesik/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.
+cd XML
+touch new.xml
+
+ 24. Добавить файл под гит.
+git add new.xml 
+
+ 25. Закоммитить файл.
+git commit -m "New xml file"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+nano new.xml 
+Вводим: 
+
+<ME>
+  <LASTNAME>Manina</LASTNAME>
+  <FIRSTNAME>Olesia</FIRSTNAME>
+  <PATRONYMIC>Sergeevna</PATRONYMIC>
+  <AGE>25</AGE>
+  <PETS>0</PETS>
+  <DESIREDSALARY>1000</DESIREDSALARY>
+</ME>
+
+Ctrl+O
+Ctrl+X
+
+ 28. Отправить изменения на внешний репозиторий.
+git commit -am "Edit new.xml"
+git push
+
+ 29. Создать файл preferences.xml
+touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+vim preferences.xml
+i и вводим:
+
+<?xml version="1.0"?>
+<PREFERENCES>
+        <FAVORITEMOVIE>Avatar</FAVORITEMOVIE>
+        <FAVORITESERIES>:Dexter</FAVORITESERIES>
+        <FAVORITEFOOD>Sushi</FAVORITEFOOD>
+        <FAVORITESEASON>Summer</FAVORITESEASON>
+        <COUNTRY>Egypt</COUNTRY>
+</PREFERENCES>
+
+Escape + :wq
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+touch skills.xml
+vim skills.xml
+i и вводим:
+
+<?xml version="1.0"?>
+<skills>    
+        <hardskills>
+                <first>теория тестирования</first>
+                <second>знание SQL</second>
+                <third>Terminal</third>
+                <fourth>Postman</fourth>
+                <fifth>DevTools</fifth>
+        </hardskills>
+        <softskills>
+                <first>самодисциплина</first>    
+                <second>коммуникабельность</second>
+                <third>критическое мышление</third>
+                <fourth>стрессоустойчивость</fourth>
+        </softskills>
+</skills>
+
+Escape + :wq
+
+ 32. Сделать коммит в одну строку.
+git add . && git commit -am "Add 2 files"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+Перейти в репозиторий XML -> Add file -> Create new file bug_report.xml
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Установить название коммита Create bug_report.xml -> Commit new file
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+Выбрать в репозитории bug_report.xml -> Edit this file -> вводим текст:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+    <Id>ABC</Id>
+    <title>Нажатие кнопки «Каталог» на главной странице не перенаправляет на страницу Каталога</title>
+    <project>Сайт магазина игрушек «Бегемот»</project>
+    <STR>
+          <first>Зайти на главную страницу сайта (ссылка на cайт)</first>
+          <second>Нажать кнопку «Каталог»</second>
+    </STR>
+    <environment>
+           <OS>Windows 10 x64 build 19043</OS>
+           <browser>Google Chrome v96.0.4664.45 x64</browser>
+    </environment>
+    <component>Кнопка «Каталог»</component>
+    <build>0.5.7</build>
+    <actualresult>Нажатие кнопки «Каталог» НЕ перенаправляет на страницу Каталога</actualresult>
+    <expectedresult>Нажатие кнопки «Каталог» перенаправляет на страницу Каталога</expectedresult>
+    <severity>Critical</severity>
+    <priority>High</priority>
+    <status>Open</status>
+    <author>Олеся Манина</author>
+    <signto>Витя Петров</signto>
+    <attachments>ссылка на картинку с багом</attachments>
+</report>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Установить название коммита Edit bug_report.xml -> Commit changes
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+git pull
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+Кнопка New в Github -> имя репозитория TXT -> галочки напротив Public и Add a README file
+
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+git clone https://github.com/o-lesik/TXT.git
+
+ 3. Внутри локального TXT создать файл “new.txt”.
+cd TXT
+touch new.txt
+
+ 4. Добавить файл под гит.
+git add new.txt 
+
+ 5. Закоммитить файл.
+git commit -m "New txt file"
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+vim new.txt
+i и вводим:
+
+Информация обо мне
+Фамилия: Манина
+Имя: Олеся 
+Отчество: Сергеевна
+Количество домашних животных: нет
+Будущая желаемая зарплата: $1000
+
+Escape + :wq 
+
+ 8. Отправить изменения на внешний репозиторий.
+git commit -am "Edit new.txt"
+git push
+
+ 9. Создать файл preferences.txt
+touch preferences.txt
+
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+nano preferences.txt
+Вводим:
+
+Мои предпочтения
+Любимый фильм: Аватар
+Любимый сериал: Декстер
+Любимая еда: Суши
+Любимое время года: Лето
+Страна, которую я хотела бы посетить: Египет
+
+Ctrl+O
+Ctrl+X
+
+ 11. Создать файл skills.txt добавить информацию о скиллах, которые будут изучены на курсе в формате TXT
+cat > skills.txt
+
+Скиллы, которые будут изучены на курсе
+Hard skills: основы тестирования, знания SQL, Terminal, Postman, Devtools
+Soft skills: самодисциплина, коммуникабельность, критическое мышление, стрессоустойчивость   
+
+Ctrl+C
+
+ 12. Сделать коммит в одну строку.
+git add . && git commit -am "Add 2 files"
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+ 14. На веб интерфейсе создать файл bug_report.txt.
+Перейти в репозиторий TXT -> Add file -> Create new file bug_report.txt
+
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Установить название коммита Create bug_report.txt -> Commit new file
+
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+Выбрать в репозитории bug_report.txt -> Edit this file -> вводим текст:
+
+Bug report
+
+ID: ABC123
+Title: Нажатие кнопки «Каталог» на главной странице не перенаправляет на страницу Каталога
+Project: Сайт магазина игрушек «Бегемот»
+STR:      
+           1) Зайти на главную страницу сайта (ссылка на cайт)
+           2) Нажать кнопку «Каталог»
+Environment:
+           OS: Windows 10 x64 build 19043
+           Browser: Google Chrome v96.0.4664.45 x64
+Component: Кнопка «Каталог»
+Build: 0.5.7
+Actual result: Нажатие кнопки «Каталог» НЕ перенаправляет на страницу Каталога
+Expected result: Нажатие кнопки «Каталог» перенаправляет на страницу Каталога
+Severity: Critical
+Priority: High
+Status: Open
+Author: Олеся Манина
+Sign to: Витя Петров
+Attachments: cкриншот бага
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Установить название коммита Update bug_report.txt -> Commit changes
+
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+git pull
